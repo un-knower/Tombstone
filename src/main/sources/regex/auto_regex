@@ -1,0 +1,4 @@
+url_list=http://club.autohome.com.cn/bbs/forum-c-\\d+\\-\\d+\\.html
+url_post=http://club.autohome.com.cn/bbs/thread-c-\\d+\\-\\d+\\-\\d+\\.html
+url_user=http://i.autohome.com.cn/\\d+\\/home.html
+url_user_info=http://i.service.autohome.com.cn/clubapp/OtherTopic-\\d+\\-all-1.html

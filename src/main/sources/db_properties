@@ -1,0 +1,7 @@
+dirverClassName=com.mysql.jdbc.Driver
+url=jdbc:mysql://127.0.0.1:3306/tombstone?useUnicode=true&characterEncoding=utf8
+username=miaohr
+password=123456
+
+chromeDriver=webdriver.chrome.driver
+chromeDriverUrl=/Users/xingwuzhao/chromedriver
