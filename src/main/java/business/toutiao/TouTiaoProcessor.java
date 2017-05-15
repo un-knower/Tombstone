@@ -50,15 +50,15 @@ public class TouTiaoProcessor extends BasePageProcessor {
 	
 	@Override
 	public void process(Page page) {
-		if(StringUtils.contains(page.getUrl().toString(), list_regex)){
+		if (StringUtils.contains(page.getUrl().toString(), list_regex)) {
 			this.pushList(page);
-		}else if(page.getUrl().regex(content_regex).match()){
+		} else if (page.getUrl().regex(content_regex).match()) {
 			this.contentExec(page);
-		}else if(StringUtils.contains(page.getUrl().toString(), common_regex)){
+		} else if (StringUtils.contains(page.getUrl().toString(), common_regex)) {
 			this.commonExec(page);
-		}else if(page.getUrl().regex(user_url_regex).match()){
+		} else if (page.getUrl().regex(user_url_regex).match()) {
 			this.userExec(page);
-		}else{
+		} else {
 			System.out.println("else....." + page.getUrl());
 		}
 	}
