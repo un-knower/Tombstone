@@ -14,7 +14,7 @@ public class TouTiaoExec {
 	public static void main(String[] args) {
 		
 		int count = 1;
-		String topic_id = "news_hot";
+		String topic_id = "news_society";
 		
 		if(topic_id == null || topic_id.length() == 0){
 			return;

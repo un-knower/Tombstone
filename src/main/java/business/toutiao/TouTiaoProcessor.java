@@ -18,6 +18,7 @@ import domain.toutiao.User;
 import lombok.extern.slf4j.Slf4j;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
+import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.selector.JsonPathSelector;
 import utils.SeleniumUtils;
 
@@ -46,6 +47,11 @@ public class TouTiaoProcessor extends BasePageProcessor {
 	public TouTiaoProcessor(int count, String keyword) {
 		this.count = count;
 		this.keyword = keyword;
+	}
+	
+	@Override
+	public Site getSite() {
+		return super.getSite().setCharset("UTF-8");
 	}
 	
 	@Override

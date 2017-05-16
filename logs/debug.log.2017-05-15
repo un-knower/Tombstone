@@ -1,0 +1,413 @@
+2017-05-15 17:47:09 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 17:47:09 [ pool-1-thread-1:2 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 17:47:09 [ pool-1-thread-1:639 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:47:10 [ pool-1-thread-1:665 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494839829,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59448,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494839829999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"20170515174709172017037002512EFA\", \"ad_price\": \"WRdluAAMce1ZF2W4AAxx7XCSIs7OEHCUcaybRw\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314212117,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 17:47:11 [ pool-1-thread-1:1671 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 17:47:11 [ pool-1-thread-2:1674 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 17:47:12 [ pool-1-thread-1:3003 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 17:47:20 [ pool-1-thread-2:10658 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 17:47:22 [ pool-1-thread-1:12653 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 17:47:22 [ pool-1-thread-2:12661 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 17:47:23 [ pool-1-thread-2:14060 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 17:47:24 [ pool-1-thread-2:15370 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 17:47:26 [ pool-1-thread-1:17379 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 17:47:28 [ pool-1-thread-1:18694 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5003463346/
+2017-05-15 17:47:31 [ pool-1-thread-2:22625 ] - [ INFO ] downloading page http://www.toutiao.com/a6420253793325531393/
+2017-05-15 17:47:33 [ pool-1-thread-1:23844 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 17:47:33 [ pool-1-thread-1:24009 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:47:33 [ pool-1-thread-2:24397 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6420253793325531393&item_id=6420273673143321089&offset=0&count=20
+2017-05-15 17:47:33 [ pool-1-thread-2:24620 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:47:34 [ pool-1-thread-1:25033 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58712669320/
+2017-05-15 17:47:34 [ pool-1-thread-2:25640 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4304589011/
+2017-05-15 17:47:40 [ pool-1-thread-2:30821 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3083966643/
+2017-05-15 17:47:41 [ pool-1-thread-1:32021 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53097130092/
+2017-05-15 17:47:47 [ pool-1-thread-2:37910 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59940331582/
+2017-05-15 17:47:48 [ pool-1-thread-1:38749 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1758242828/
+2017-05-15 17:47:54 [ pool-1-thread-2:44771 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52257239969/
+2017-05-15 17:47:57 [ pool-1-thread-1:48374 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52619257178/
+2017-05-15 17:48:03 [ pool-1-thread-2:54510 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/13953002395/
+2017-05-15 17:48:04 [ pool-1-thread-1:55144 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51081382721/
+2017-05-15 17:48:10 [ pool-1-thread-2:61126 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51412945793/
+2017-05-15 17:48:11 [ pool-1-thread-1:62105 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4427610435/
+2017-05-15 17:48:15 [ pool-1-thread-2:66320 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59947748315/
+2017-05-15 17:48:18 [ pool-1-thread-1:69403 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1290203766/
+2017-05-15 17:48:22 [ pool-1-thread-2:73224 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/54989825426/
+2017-05-15 17:48:24 [ pool-1-thread-1:75550 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/55884685263/
+2017-05-15 17:48:27 [ pool-1-thread-2:78298 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/21882465723/
+2017-05-15 17:48:29 [ pool-1-thread-1:80368 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1158618104/
+2017-05-15 17:48:34 [ pool-1-thread-2:85590 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53889149077/
+2017-05-15 17:48:41 [ pool-1-thread-2:92069 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1908901200/
+2017-05-15 17:48:42 [ pool-1-thread-1:92822 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/6222424075/
+2017-05-15 17:48:45 [ pool-1-thread-2:96604 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3180167751/
+2017-05-15 17:48:47 [ pool-1-thread-1:98600 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2747906713/
+2017-05-15 17:48:52 [ pool-1-thread-2:102886 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/6642488499/
+2017-05-15 17:48:53 [ pool-1-thread-1:103840 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2867192604/
+2017-05-15 17:48:59 [ pool-1-thread-2:110154 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2404056341/
+2017-05-15 17:49:00 [ pool-1-thread-1:110851 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/11732162814/
+2017-05-15 17:49:04 [ pool-1-thread-2:115342 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/6670095193/
+2017-05-15 17:49:05 [ pool-1-thread-1:116516 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58046951084/
+2017-05-15 17:49:10 [ pool-1-thread-1:121108 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5863715452/
+2017-05-15 17:49:11 [ pool-1-thread-2:122036 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4365337622/
+2017-05-15 17:49:14 [ pool-1-thread-1:125551 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4277235807/
+2017-05-15 17:49:17 [ pool-1-thread-2:128629 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4682368591/
+2017-05-15 17:49:22 [ pool-1-thread-1:132683 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53590060981/
+2017-05-15 17:49:22 [ pool-1-thread-2:133435 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5731011350/
+2017-05-15 17:49:28 [ pool-1-thread-1:139270 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3900770381/
+2017-05-15 17:49:31 [ pool-1-thread-2:141742 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5948546858/
+2017-05-15 17:49:34 [ pool-1-thread-1:145168 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/57807998685/
+2017-05-15 17:49:38 [ pool-1-thread-2:149065 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/60017609210/
+2017-05-15 17:49:40 [ pool-1-thread-1:150747 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/50449070887/
+2017-05-15 17:58:17 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 17:58:17 [ pool-1-thread-1:3 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 17:58:18 [ pool-1-thread-1:804 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:18 [ pool-1-thread-1:832 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494840497,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59703,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494840497999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"201705151758171720171220077853F2\", \"ad_price\": \"WRlnvgAOhlNZGWe-AA6GUzr8zWckQijxPjPyXg\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314211448,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 17:58:19 [ pool-1-thread-1:1839 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 17:58:19 [ pool-1-thread-2:1842 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 17:58:20 [ pool-1-thread-1:3148 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 17:58:23 [ pool-1-thread-2:6159 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 17:58:25 [ pool-1-thread-2:7435 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 17:58:27 [ pool-1-thread-1:9392 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 17:58:28 [ pool-1-thread-1:10732 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 17:58:28 [ pool-1-thread-2:11276 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 17:58:29 [ pool-1-thread-1:12267 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 17:58:31 [ pool-1-thread-1:13499 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5003463346/
+2017-05-15 17:58:34 [ pool-1-thread-2:17317 ] - [ INFO ] downloading page http://www.toutiao.com/a6420253793325531393/
+2017-05-15 17:58:36 [ pool-1-thread-2:18549 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 17:58:36 [ pool-1-thread-2:18695 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:37 [ pool-1-thread-2:19718 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6420253793325531393&item_id=6420273673143321089&offset=0&count=20
+2017-05-15 17:58:37 [ pool-1-thread-2:19934 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:38 [ pool-1-thread-1:20813 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20
+2017-05-15 17:58:38 [ pool-1-thread-2:20961 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20
+2017-05-15 17:58:38 [ pool-1-thread-1:20983 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:38 [ pool-1-thread-1:20986 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 17:58:38 [ pool-1-thread-1:20987 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20
+2017-05-15 17:58:38 [ pool-1-thread-2:21120 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:38 [ pool-1-thread-2:21121 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 17:58:38 [ pool-1-thread-2:21122 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20
+2017-05-15 17:58:38 [ pool-1-thread-1:21124 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:38 [ pool-1-thread-1:21125 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 17:58:38 [ pool-1-thread-1:21126 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=5&count=20
+2017-05-15 17:58:38 [ pool-1-thread-1:21215 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:38 [ pool-1-thread-2:21241 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:38 [ pool-1-thread-2:21241 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 17:58:38 [ pool-1-thread-2:21242 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=6&count=20
+2017-05-15 17:58:38 [ pool-1-thread-2:21326 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:39 [ pool-1-thread-1:22221 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=7&count=20
+2017-05-15 17:58:39 [ pool-1-thread-2:22327 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58712669320/
+2017-05-15 17:58:39 [ pool-1-thread-1:22338 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:58:40 [ pool-1-thread-1:23340 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4304589011/
+2017-05-15 17:58:43 [ pool-1-thread-2:26193 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3083966643/
+2017-05-15 17:58:44 [ pool-1-thread-1:27075 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53097130092/
+2017-05-15 17:58:47 [ pool-1-thread-2:29841 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59940331582/
+2017-05-15 17:58:48 [ pool-1-thread-1:30791 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1758242828/
+2017-05-15 17:58:50 [ pool-1-thread-2:33319 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52257239969/
+2017-05-15 17:58:51 [ pool-1-thread-1:34325 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52619257178/
+2017-05-15 17:58:54 [ pool-1-thread-2:36895 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/13953002395/
+2017-05-15 17:58:55 [ pool-1-thread-1:37911 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51081382721/
+2017-05-15 17:58:58 [ pool-1-thread-2:40424 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51412945793/
+2017-05-15 17:58:59 [ pool-1-thread-1:41446 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4427610435/
+2017-05-15 17:59:01 [ pool-1-thread-2:43897 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59947748315/
+2017-05-15 17:59:02 [ pool-1-thread-1:45031 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1290203766/
+2017-05-15 17:59:05 [ pool-1-thread-2:47442 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/54989825426/
+2017-05-15 17:59:06 [ pool-1-thread-1:48661 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/55884685263/
+2017-05-15 17:59:08 [ pool-1-thread-2:51188 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/21882465723/
+2017-05-15 17:59:50 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 17:59:50 [ pool-1-thread-1:3 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 17:59:51 [ pool-1-thread-1:591 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 17:59:51 [ pool-1-thread-1:625 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494840590,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59703,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494840590999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"20170515175950172017026004774AD7\", \"ad_price\": \"WRloEgAGKcRZGWgSAAYpxJwOyZbkiybmORKTsg\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314211356,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 17:59:52 [ pool-1-thread-1:1631 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 17:59:52 [ pool-1-thread-2:1632 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 17:59:53 [ pool-1-thread-1:2962 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 17:59:56 [ pool-1-thread-2:5748 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 17:59:57 [ pool-1-thread-2:6952 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 17:59:58 [ pool-1-thread-1:7979 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 17:59:59 [ pool-1-thread-1:9219 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 18:00:01 [ pool-1-thread-1:10442 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 18:00:02 [ pool-1-thread-2:12026 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 18:00:03 [ pool-1-thread-2:13235 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5003463346/
+2017-05-15 18:00:05 [ pool-1-thread-1:14791 ] - [ INFO ] downloading page http://www.toutiao.com/a6420253793325531393/
+2017-05-15 18:00:06 [ pool-1-thread-1:15993 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 18:00:06 [ pool-1-thread-1:16185 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:08 [ pool-1-thread-2:17503 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6420253793325531393&item_id=6420273673143321089&offset=0&count=20
+2017-05-15 18:00:08 [ pool-1-thread-2:17628 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:53 [ pool-1-thread-1:62443 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20
+2017-05-15 18:00:53 [ pool-1-thread-1:62573 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:53 [ pool-1-thread-1:62574 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:00:53 [ pool-1-thread-1:62576 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20
+2017-05-15 18:00:53 [ pool-1-thread-1:62702 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:53 [ pool-1-thread-1:62704 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:00:53 [ pool-1-thread-1:62704 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20
+2017-05-15 18:00:53 [ pool-1-thread-1:62884 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:53 [ pool-1-thread-1:62885 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:00:53 [ pool-1-thread-1:62886 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20
+2017-05-15 18:00:53 [ pool-1-thread-1:63066 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:53 [ pool-1-thread-1:63067 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:00:53 [ pool-1-thread-1:63068 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=5&count=20
+2017-05-15 18:00:53 [ pool-1-thread-1:63145 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:54 [ pool-1-thread-1:64146 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=6&count=20
+2017-05-15 18:00:54 [ pool-1-thread-1:64245 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:55 [ pool-1-thread-1:65248 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=7&count=20
+2017-05-15 18:00:56 [ pool-1-thread-1:65367 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:00:57 [ pool-1-thread-1:66368 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58712669320/
+2017-05-15 18:01:00 [ pool-1-thread-1:69913 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4304589011/
+2017-05-15 18:01:03 [ pool-1-thread-1:73311 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3083966643/
+2017-05-15 18:01:38 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 18:01:38 [ pool-1-thread-1:3 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 18:01:39 [ pool-1-thread-1:708 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:01:39 [ pool-1-thread-1:740 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494840698,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59703,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494840698999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"20170515180138172017144007610876\", \"ad_price\": \"WRlnowANI5lZGWejAA0jmRqUt1Z9bXCNmEgnyA\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314211248,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 18:01:40 [ pool-1-thread-1:1749 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 18:01:40 [ pool-1-thread-2:1749 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 18:01:41 [ pool-1-thread-1:3067 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 18:01:44 [ pool-1-thread-2:6163 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 18:01:45 [ pool-1-thread-1:6696 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 18:01:45 [ pool-1-thread-2:7380 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 18:01:47 [ pool-1-thread-2:8942 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 18:01:48 [ pool-1-thread-2:10230 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 18:01:49 [ pool-1-thread-1:10666 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 18:01:52 [ pool-1-thread-2:13896 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5003463346/
+2017-05-15 18:01:56 [ pool-1-thread-2:17933 ] - [ INFO ] downloading page http://www.toutiao.com/a6420253793325531393/
+2017-05-15 18:02:07 [ pool-1-thread-1:28691 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 18:02:07 [ pool-1-thread-1:28863 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:09 [ pool-1-thread-2:31222 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6420253793325531393&item_id=6420273673143321089&offset=0&count=20
+2017-05-15 18:02:09 [ pool-1-thread-2:31398 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:48 [ pool-1-thread-1:69984 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20
+2017-05-15 18:02:48 [ pool-1-thread-1:70188 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:57 [ pool-1-thread-2:79192 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20
+2017-05-15 18:02:57 [ pool-1-thread-2:79403 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:57 [ pool-1-thread-2:79405 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:02:57 [ pool-1-thread-2:79407 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20
+2017-05-15 18:02:58 [ pool-1-thread-2:79584 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:58 [ pool-1-thread-2:79585 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:02:58 [ pool-1-thread-2:79585 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20
+2017-05-15 18:02:58 [ pool-1-thread-2:79778 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:58 [ pool-1-thread-2:79779 ] - [ ERROR ] process request Request{url='http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at business.toutiao.TouTiaoProcessor.commonExec(TouTiaoProcessor.java:167)
+	at business.toutiao.TouTiaoProcessor.process(TouTiaoProcessor.java:58)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:416)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-15 18:02:58 [ pool-1-thread-2:79780 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=5&count=20
+2017-05-15 18:02:58 [ pool-1-thread-2:79886 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:02:59 [ pool-1-thread-2:80890 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=6&count=20
+2017-05-15 18:02:59 [ pool-1-thread-2:80989 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:00 [ pool-1-thread-2:81995 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=7&count=20
+2017-05-15 18:03:00 [ pool-1-thread-2:82086 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:01 [ pool-1-thread-2:83092 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58712669320/
+2017-05-15 18:03:05 [ pool-1-thread-2:86758 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4304589011/
+2017-05-15 18:03:41 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 18:03:41 [ pool-1-thread-1:4 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 18:03:41 [ pool-1-thread-1:638 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:41 [ pool-1-thread-1:665 ] - [ ERROR ] invalid path>>>> {"chinese_tag":"时政","image_url":"http:\/\/p9.pstatp.com\/list\/190x124\/1e23000ff09c9954ec33","group_source":1,"abstract":"新华社快讯：国家主席习近平15日宣布，中国将于2019年举办第二届\u201C一带一路\u201D国际合作高峰论坛。","source":"新华网","title":"习近平：中国将于2019年举办第二届\u201C一带一路\u201D国际合作高峰论坛","behot_time":1494841421,"media_url":"\/c\/user\/4377795668\/","source_url":"https:\/\/www.toutiao.com\/group\/6420294000896917762\/","is_feed_ad":false,"middle_mode":true,"group_id":"6420294000896917762","tag_url":"search\/?keyword=%E6%97%B6%E6%94%BF","tag":"news_politics","has_gallery":false,"media_avatar_url":"http:\/\/p2.pstatp.com\/large\/3658\/7378365093","single_mode":true,"more_mode":false,"article_genre":"article"}
+2017-05-15 18:03:41 [ pool-1-thread-1:666 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494840821,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59703,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494840821999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"20170515180341172017248005220AC0\", \"ad_price\": \"WRdloQAAuQRZF2WhAAC5BAb4kqiCHb9yzBpv5g\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314211125,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 18:03:42 [ pool-1-thread-1:1669 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 18:03:42 [ pool-1-thread-2:1669 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 18:03:44 [ pool-1-thread-1:2993 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 18:03:46 [ pool-1-thread-2:5695 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 18:03:47 [ pool-1-thread-1:6626 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 18:03:47 [ pool-1-thread-2:6899 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 18:03:49 [ pool-1-thread-2:8529 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 18:03:50 [ pool-1-thread-2:9763 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 18:03:51 [ pool-1-thread-1:10897 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 18:03:53 [ pool-1-thread-1:12124 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 18:03:53 [ pool-1-thread-1:12304 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:54 [ pool-1-thread-1:13337 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20
+2017-05-15 18:03:54 [ pool-1-thread-1:13531 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:55 [ pool-1-thread-1:14558 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20
+2017-05-15 18:03:55 [ pool-1-thread-1:14683 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:55 [ pool-1-thread-2:14728 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20
+2017-05-15 18:03:56 [ pool-1-thread-2:14923 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:56 [ pool-1-thread-1:15701 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20
+2017-05-15 18:03:56 [ pool-1-thread-1:15833 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:57 [ pool-1-thread-2:15940 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=5&count=20
+2017-05-15 18:03:57 [ pool-1-thread-2:16034 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:57 [ pool-1-thread-1:16852 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=6&count=20
+2017-05-15 18:03:58 [ pool-1-thread-1:16939 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:58 [ pool-1-thread-2:17036 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=7&count=20
+2017-05-15 18:03:58 [ pool-1-thread-2:17123 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:03:59 [ pool-1-thread-1:17945 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58712669320/
+2017-05-15 18:03:59 [ pool-1-thread-2:18124 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4304589011/
+2017-05-15 18:04:02 [ pool-1-thread-1:21552 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3083966643/
+2017-05-15 18:04:02 [ pool-1-thread-2:21862 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53097130092/
+2017-05-15 18:04:06 [ pool-1-thread-1:25235 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59940331582/
+2017-05-15 18:04:06 [ pool-1-thread-2:25590 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1758242828/
+2017-05-15 18:04:10 [ pool-1-thread-2:29308 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52257239969/
+2017-05-15 18:04:10 [ pool-1-thread-1:29548 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52619257178/
+2017-05-15 18:04:14 [ pool-1-thread-2:33178 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/13953002395/
+2017-05-15 18:04:14 [ pool-1-thread-1:33399 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51081382721/
+2017-05-15 18:04:17 [ pool-1-thread-2:36902 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51412945793/
+2017-05-15 18:04:18 [ pool-1-thread-1:36993 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4427610435/
+2017-05-15 18:04:21 [ pool-1-thread-1:40615 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59947748315/
+2017-05-15 18:04:21 [ pool-1-thread-2:40716 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1290203766/
+2017-05-15 18:04:25 [ pool-1-thread-1:44217 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/54989825426/
+2017-05-15 18:04:25 [ pool-1-thread-2:44641 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/55884685263/
+2017-05-15 18:04:28 [ pool-1-thread-1:47739 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/21882465723/
+2017-05-15 18:04:29 [ pool-1-thread-2:48256 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1158618104/
+2017-05-15 18:04:32 [ pool-1-thread-1:51277 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53889149077/
+2017-05-15 18:04:32 [ pool-1-thread-2:51846 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1908901200/
+2017-05-15 18:04:35 [ pool-1-thread-1:54847 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3614696679/
+2017-05-15 18:04:36 [ pool-1-thread-2:55456 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2762535348/
+2017-05-15 18:04:39 [ pool-1-thread-1:58550 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3181917534/
+2017-05-15 18:04:43 [ pool-1-thread-1:62097 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2916714152/
+2017-05-15 18:06:38 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 18:06:38 [ pool-1-thread-1:2 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 18:06:38 [ pool-1-thread-1:593 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:06:38 [ pool-1-thread-1:621 ] - [ ERROR ] invalid path>>>> {"chinese_tag":"时政","image_url":"http:\/\/p9.pstatp.com\/list\/190x124\/1e23000ff09c9954ec33","group_source":1,"abstract":"新华社快讯：国家主席习近平15日宣布，中国将于2019年举办第二届\u201C一带一路\u201D国际合作高峰论坛。","source":"新华网","title":"习近平：中国将于2019年举办第二届\u201C一带一路\u201D国际合作高峰论坛","behot_time":1494841598,"media_url":"\/c\/user\/4377795668\/","source_url":"https:\/\/www.toutiao.com\/group\/6420294000896917762\/","is_feed_ad":false,"middle_mode":true,"group_id":"6420294000896917762","tag_url":"search\/?keyword=%E6%97%B6%E6%94%BF","tag":"news_politics","has_gallery":false,"media_avatar_url":"http:\/\/p2.pstatp.com\/large\/3658\/7378365093","single_mode":true,"more_mode":false,"article_genre":"article"}
+2017-05-15 18:06:38 [ pool-1-thread-1:623 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494840998,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59619,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494840998999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"20170515180638172017120002180D52\", \"ad_price\": \"WRlnpQANxOdZGWelAA3E54bNWBQ7gbqL1O0OvA\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314210948,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 18:06:39 [ pool-1-thread-1:1631 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 18:06:39 [ pool-1-thread-2:1631 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 18:06:41 [ pool-1-thread-1:2940 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 18:06:43 [ pool-1-thread-2:5563 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 18:06:44 [ pool-1-thread-2:6792 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 18:06:48 [ pool-1-thread-2:10391 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 18:06:49 [ pool-1-thread-2:11675 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 18:06:50 [ pool-1-thread-1:12157 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 18:06:51 [ pool-1-thread-2:12926 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 18:06:52 [ pool-1-thread-2:14281 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 18:07:06 [ main:0 ] - [ INFO ] Spider www.toutiao.com started!
+2017-05-15 18:07:06 [ pool-1-thread-1:2 ] - [ INFO ] downloading page http://www.toutiao.com/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1E559112451042&cp=5914511014B23E1
+2017-05-15 18:07:07 [ pool-1-thread-1:589 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:07 [ pool-1-thread-1:617 ] - [ ERROR ] invalid path>>>> {"chinese_tag":"时政","image_url":"http:\/\/p9.pstatp.com\/list\/190x124\/1e23000ff09c9954ec33","group_source":1,"abstract":"新华社快讯：国家主席习近平15日宣布，中国将于2019年举办第二届\u201C一带一路\u201D国际合作高峰论坛。","source":"新华网","title":"习近平：中国将于2019年举办第二届\u201C一带一路\u201D国际合作高峰论坛","behot_time":1494841626,"media_url":"\/c\/user\/4377795668\/","source_url":"\/group\/6420294000896917762\/","is_feed_ad":false,"middle_mode":true,"group_id":"6420294000896917762","tag_url":"search\/?keyword=%E6%97%B6%E6%94%BF","tag":"news_politics","has_gallery":false,"media_avatar_url":"http:\/\/p2.pstatp.com\/large\/3658\/7378365093","single_mode":true,"more_mode":false,"article_genre":"article"}
+2017-05-15 18:07:07 [ pool-1-thread-1:618 ] - [ ERROR ] invalid path>>>> {"comment_count":0,"label_style":3,"source_icon_style":3,"aggr_type":1,"source":"钱坤股票","behot_time":1494841026,"cell_flag":10,"source_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","is_feed_ad":true,"publish_time":1493263876,"tag_id":6413519513735659777,"tip":0,"tag":"ad","large_image_list":[],"read_count":59703,"user_verified":0,"level":0,"ad_label":"广告","article_alt_url":"http:\/\/toutiao.com\/group\/article\/6413519513735659777\/","has_m3u8_video":0,"natant_level":2,"user_repin":0,"ad_id":59493695397,"item_version":0,"digg_count":0,"ignore_web_transform":1,"share_url":"http:\/\/toutiao.com\/group\/6413519513735659777\/?iid=0&app=news_article","article_genre":"ad","cursor":1494841026999,"display_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","gallary_image_count":3,"cell_layout_style":1,"display_info":"万万没想到，本地居然有这么好的微信投资交流平台","title":"万万没想到，北京居然有这么好的微信投资交流平台","hot":0,"has_video":false,"log_extra":"{\"rit\": 1, \"convert_id\": 0, \"req_id\": \"20170515180706172017238002932781\", \"ad_price\": \"WRloEAAOJBVZGWgQAA4kFbTgvXpRFbs2F8cqdw\"}","ban_comment":1,"article_sub_type":0,"has_image":false,"bury_count":0,"preload_web":0,"cell_type":0,"verified_content":"","more_mode":true,"article_type":1,"action_list":[{"extra":{},"action":1,"desc":""},{"extra":{},"action":3,"desc":""},{"extra":{},"action":7,"desc":""},{"extra":{},"action":9,"desc":""}],"item_id":6413519513735659777,"source_open_url":"sslocal:\/\/search?from=channel_source&keyword=%E9%92%B1%E5%9D%A4%E8%82%A1%E7%A5%A8","abstract":"","label":"广告","article_url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","url":"http:\/\/dytz.dyjr88.com\/template\/html\/1e\/590157d25c61e.html","filter_words":[{"is_selected":false,"name":"金融保险","id":"1:6"},{"is_selected":false,"name":"股票","id":"1:74"},{"is_selected":false,"name":"来源:钱坤股票","id":"2:0"},{"is_selected":false,"name":"看过了","id":"4:2"}],"group_id":"6413519513735659777","has_mp4_video":0,"middle_image":{},"video_style":0,"tag_url":"search\/?keyword=None","has_gallery":true,"expire_seconds":314210919,"single_mode":false,"image_list":[{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb9.pstatp.com\/list\/1db100153cb5e34506f1"},{"url":"http:\/\/pb1.pstatp.com\/list\/1db100153cb5e34506f1"}],"width":228,"uri":"list\/1db100153cb5e34506f1","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1db100153cb5e34506f1","height":128},{"url_list":[{"url":"http:\/\/p3.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb9.pstatp.com\/list\/1c1b0019c0c03c86dfd4"},{"url":"http:\/\/pb1.pstatp.com\/list\/1c1b0019c0c03c86dfd4"}],"width":228,"uri":"list\/1c1b0019c0c03c86dfd4","pc_url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","url":"http:\/\/p3.pstatp.com\/list\/190x124\/1c1b0019c0c03c86dfd4","height":128},{"url_list":[{"url":"http:\/\/p1.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb3.pstatp.com\/list\/1dd4000d35707f147306"},{"url":"http:\/\/pb9.pstatp.com\/list\/1dd4000d35707f147306"}],"width":228,"uri":"list\/1dd4000d35707f147306","pc_url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","url":"http:\/\/p1.pstatp.com\/list\/190x124\/1dd4000d35707f147306","height":128}]}
+2017-05-15 18:07:08 [ pool-1-thread-1:1622 ] - [ INFO ] downloading page http://www.toutiao.com/a6419981716484555010/
+2017-05-15 18:07:08 [ pool-1-thread-2:1622 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4377795668/
+2017-05-15 18:07:09 [ pool-1-thread-1:2974 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/5806115967/
+2017-05-15 18:07:13 [ pool-1-thread-2:6825 ] - [ INFO ] downloading page http://www.toutiao.com/a6420224996764811777/
+2017-05-15 18:07:14 [ pool-1-thread-1:7214 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4492956276/
+2017-05-15 18:07:14 [ pool-1-thread-2:8100 ] - [ INFO ] downloading page http://www.toutiao.com/a6419994788703551746/
+2017-05-15 18:07:16 [ pool-1-thread-2:9357 ] - [ INFO ] downloading page http://www.toutiao.com/a6419999194781614337/
+2017-05-15 18:07:17 [ pool-1-thread-2:10785 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3582660809/
+2017-05-15 18:07:17 [ pool-1-thread-1:10833 ] - [ INFO ] downloading page http://www.toutiao.com/a6419967176400273665/
+2017-05-15 18:07:18 [ pool-1-thread-1:12101 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=0&count=20
+2017-05-15 18:07:19 [ pool-1-thread-1:12279 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:20 [ pool-1-thread-1:13313 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=1&count=20
+2017-05-15 18:07:20 [ pool-1-thread-1:13510 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:21 [ pool-1-thread-1:14531 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=2&count=20
+2017-05-15 18:07:21 [ pool-1-thread-1:14658 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:22 [ pool-1-thread-1:15680 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=3&count=20
+2017-05-15 18:07:22 [ pool-1-thread-1:15808 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:23 [ pool-1-thread-1:16832 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=4&count=20
+2017-05-15 18:07:23 [ pool-1-thread-1:17025 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:24 [ pool-1-thread-2:17456 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=5&count=20
+2017-05-15 18:07:24 [ pool-1-thread-2:17553 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:24 [ pool-1-thread-1:18043 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=6&count=20
+2017-05-15 18:07:24 [ pool-1-thread-1:18132 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:25 [ pool-1-thread-2:18559 ] - [ INFO ] downloading page http://www.toutiao.com/api/comment/list/?group_id=6419967176400273665&item_id=6419985313787019778&offset=7&count=20
+2017-05-15 18:07:25 [ pool-1-thread-2:18654 ] - [ WARN ] Charset autodetect failed, use UTF-8 as charset. Please specify charset in Site.setCharset()
+2017-05-15 18:07:25 [ pool-1-thread-1:19138 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/58712669320/
+2017-05-15 18:07:26 [ pool-1-thread-2:19655 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4304589011/
+2017-05-15 18:07:29 [ pool-1-thread-1:22701 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3083966643/
+2017-05-15 18:07:30 [ pool-1-thread-2:23261 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53097130092/
+2017-05-15 18:07:33 [ pool-1-thread-1:26261 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59940331582/
+2017-05-15 18:07:33 [ pool-1-thread-2:26853 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1758242828/
+2017-05-15 18:07:36 [ pool-1-thread-1:29899 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52257239969/
+2017-05-15 18:07:37 [ pool-1-thread-2:31042 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/52619257178/
+2017-05-15 18:07:40 [ pool-1-thread-1:33549 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/13953002395/
+2017-05-15 18:07:41 [ pool-1-thread-2:34771 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51081382721/
+2017-05-15 18:07:44 [ pool-1-thread-1:37268 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/51412945793/
+2017-05-15 18:07:45 [ pool-1-thread-2:38436 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/4427610435/
+2017-05-15 18:07:47 [ pool-1-thread-1:40821 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/59947748315/
+2017-05-15 18:07:48 [ pool-1-thread-2:42130 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1290203766/
+2017-05-15 18:07:51 [ pool-1-thread-1:44588 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/54989825426/
+2017-05-15 18:07:53 [ pool-1-thread-2:46280 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/55884685263/
+2017-05-15 18:07:55 [ pool-1-thread-1:48265 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/21882465723/
+2017-05-15 18:07:56 [ pool-1-thread-2:49895 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1158618104/
+2017-05-15 18:07:58 [ pool-1-thread-1:51919 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/53889149077/
+2017-05-15 18:08:00 [ pool-1-thread-2:53545 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/1908901200/
+2017-05-15 18:08:02 [ pool-1-thread-1:55480 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3614696679/
+2017-05-15 18:08:04 [ pool-1-thread-2:57311 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2762535348/
+2017-05-15 18:08:06 [ pool-1-thread-1:59426 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/3181917534/
+2017-05-15 18:08:07 [ pool-1-thread-2:60940 ] - [ INFO ] downloading page http://www.toutiao.com/c/user/2916714152/
