@@ -69,7 +69,13 @@ public class TouTiaoProcessor extends BasePageProcessor {
 			for (String list : lists) {
 				try {
 					String group_id = new JsonPathSelector("$.group_id").select(list);
-					String comments_count = new JsonPathSelector("$.comments_count").select(list);
+					String comments_count = "0";
+					if(StringUtils.contains(list, "comments_count")){
+						comments_count = new JsonPathSelector("$.comments_count").select(list);
+					}else if(StringUtils.contains(list, "gallary_image_count")){
+						comments_count = new JsonPathSelector("$.gallary_image_count").select(list);
+					}
+					
 					String chinese_tag = new JsonPathSelector("$.chinese_tag").select(list);
 					
 					String media_url = "";
@@ -119,6 +125,7 @@ public class TouTiaoProcessor extends BasePageProcessor {
 		String comments_count = page.getRequest().getExtra("commons").toString();
 		String chinese_tag = page.getRequest().getExtra("chinese_tag").toString();
 		
+		author = StringUtils.deleteWhitespace(author);
 		GlobalComponent.dbBean.insert_data(Content.class, title, author, url, createTime, comments_count, chinese_tag);
 
 		String item_id = StringUtils.substringBetween(page.getRawText(), "item_id: '", "',");
@@ -148,7 +155,10 @@ public class TouTiaoProcessor extends BasePageProcessor {
 	}
 	
 	private void commonExec(Page page) {
-		if (StringUtils.contains(page.getUrl().toString(), "&offset=1&count=20")) {
+		
+		String title = page.getRequest().getExtra("title").toString();
+		
+		if (StringUtils.contains(page.getUrl().toString(), "&offset=0&count=20")) {
 			int pageNum = 0;
 			int total_commons = Integer.parseInt(new JsonPathSelector("$.data[*].total").select(page.getRawText()));
 			if (total_commons % 20 >= 0) {
@@ -158,13 +168,19 @@ public class TouTiaoProcessor extends BasePageProcessor {
 			}
 			String commons_url_left = StringUtils.substringBefore(page.getUrl().toString(), "&offset=");
 			for (int i = 1; i <= pageNum; i++) {
-				page.addTargetRequest(commons_url_left + "&offset=" + i + "&count=20");
+				String url = commons_url_left + "&offset=" + i + "&count=20";
+				Request request = new Request();
+				request.setUrl(url);
+				Map<String, Object> extras = new HashMap<String, Object>();
+				extras.put("title", title);
+				request.setExtras(extras);
+				page.addTargetRequest(request);
 			}
 		}
 
 		List<String> total_comments = new JsonPathSelector("$.data[*].comments").selectList(page.getRawText());
 		for (String comment : total_comments) {
-			String title = page.getRequest().getExtra("title").toString();
+			
 			String content = new JsonPathSelector("$.text").select(comment);
 			String author = new JsonPathSelector("$.user.name").select(comment);
 			String userid = new JsonPathSelector("$.user.user_id").select(comment);
