@@ -8,7 +8,9 @@ import org.apache.commons.dbutils.QueryRunner;
 
 import conf.db.mysql.ConnectDb;
 import conf.db.mysql.DBTable;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class DBBean {
 
 	private Connection conn = null;  
@@ -44,7 +46,11 @@ public class DBBean {
 				Field[] fields = t.getDeclaredFields();
 				for (Field field : fields) {
 					field.setAccessible(true);
-					sql.append("`" + field.getName() + "` varchar(1024) NOT NULL,");
+					if("title".equals(field.getName())){
+						sql.append("`" + field.getName() + "` text NOT NULL,");
+					}else{
+						sql.append("`" + field.getName() + "` varchar(128) NOT NULL,");
+					}
 				}
 				sql.append("PRIMARY KEY (`id`)) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4");
 
@@ -52,7 +58,7 @@ public class DBBean {
 				// create table <end>
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error(e.getMessage());
 		}
 	}
 
@@ -79,7 +85,7 @@ public class DBBean {
 
 			qRunner.update(conn, sql.toString(),  params);   
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error(e.getMessage());
 		} 
 	}
 }
