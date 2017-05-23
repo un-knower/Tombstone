@@ -24,6 +24,8 @@ public class WeiboLoginExec {
     	//打开
         WebClient webClient = new WebClient(BrowserVersion.CHROME);
         webClient.addRequestHeader("User-Agent", "Mozilla/5.0 (iPad; CPU OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A501 Safari/9537.53");
+        webClient.getCookieManager().setCookiesEnabled(true);
+        
         HtmlPage page = webClient.getPage(baseUrl);
         //等待页面加载
         Thread.sleep(1000);
@@ -38,11 +40,7 @@ public class WeiboLoginExec {
         page =(HtmlPage) button.click();
         //等待页面加载
         Thread.sleep(1000);
-
-        //放入cookie池中
-        COOKIE_LIST.add(webClient.getCookieManager().getCookies());
         
         return page;
 	}
-    
 }

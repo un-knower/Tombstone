@@ -13,8 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DBBean {
 
-	private Connection conn = null;  
-    private QueryRunner qRunner = null;  
+	public Connection conn = null;  
+    public QueryRunner qRunner = null;  
     
 	public DBBean() {
 		conn = ConnectDb.Connect();  

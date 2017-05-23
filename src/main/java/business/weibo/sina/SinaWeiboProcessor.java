@@ -1,15 +1,32 @@
 package business.weibo.sina;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.DomElement;
+import com.gargoylesoftware.htmlunit.html.HtmlInput;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.util.Cookie;
 
 import business.BasePageProcessor;
 import conf.db.GlobalComponent;
 import domain.weibo.sina.Content;
 import domain.weibo.sina.User;
 import us.codecraft.webmagic.Page;
+import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.selector.JsonPathSelector;
+import utils.TimerUtils;
 
 /**
  * 主要是 根据内容搜索 微博 获取评论用户、转发用户信息
@@ -41,7 +58,7 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 		}else if(StringUtils.contains(page.getUrl().toString(), attitudes_url_regex)){
 			this.attitudesExec(page);
 		}else{
-			System.out.println("no path match!");
+			System.out.println("no match!");
 		}
 	}
 	
@@ -67,12 +84,14 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 			String content_id = new JsonPathSelector("$.mblog.id").select(s);
 			String url = String.format(comments_url, content_id);
 			String createTime = new JsonPathSelector("$.mblog.created_at").select(s);
+			createTime = TimerUtils.sinaweiboTime(createTime);
 			String attitudes_count = new JsonPathSelector("$.mblog.attitudes_count").select(s);
 			String comments_count = new JsonPathSelector("$.mblog.comments_count").select(s);
 			String reposts_count = new JsonPathSelector("$.mblog.reposts_count").select(s);
 			String author_id = new JsonPathSelector("$.mblog.user.id").select(s);
+			String source = new JsonPathSelector("$.mblog.source").select(s);
 			
-			GlobalComponent.dbBean.insert_data(Content.class, title, author, url, createTime, attitudes_count, comments_count, reposts_count);
+			GlobalComponent.dbBean.insert_data(Content.class, title, author, url, createTime, attitudes_count, comments_count, reposts_count, source);
 			
 			page.addTargetRequest(user_url + author_id);
 			//推送评论url
@@ -92,7 +111,17 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 		String followers_count = new JsonPathSelector("$.userInfo.followers_count ").select(page.getRawText());
 		String follow_count = new JsonPathSelector("$.userInfo.follow_count").select(page.getRawText());
 		
-		GlobalComponent.dbBean.insert_data(User.class, screen_name, profile_url, statuses_count, verified, description, gender, followers_count, follow_count);
+		String id = new JsonPathSelector("$.userInfo.id").select(page.getRawText());
+		
+		String birthday = "";
+		String area = "";
+		String tags = "";
+		
+		GlobalComponent.dbBean.insert_data(User.class, screen_name, profile_url, 
+				statuses_count, verified, description, gender, followers_count, follow_count, 
+				birthday, area, tags);
+		
+		userJsoupExec("https://weibo.cn/" + id + "/info", profile_url);
 	}
 	
 	private void commentsExec(Page page){
@@ -131,6 +160,59 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 				String author_id = new JsonPathSelector("$.user.id").select(s);
 				page.addTargetRequest(user_url + author_id);
 			}
+		}
+	}
+	
+	/**
+	 * 模拟登陆sina微博获取cookie
+	 */
+	private String getCookie() throws InterruptedException, FailingHttpStatusCodeException, MalformedURLException, IOException{
+        WebClient webClient = new WebClient(BrowserVersion.CHROME);
+        webClient.addRequestHeader("User-Agent", "Mozilla/5.0 (iPad; CPU OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A501 Safari/9537.53");
+        webClient.getCookieManager().setCookiesEnabled(true);
+        
+        HtmlPage page = webClient.getPage("https://passport.weibo.cn/signin/login");
+        Thread.sleep(1000);
+        HtmlInput usr = (HtmlInput) page.getElementById("loginName");
+        usr.setValueAttribute("zxw0066@sina.cn");
+        HtmlInput pwd = (HtmlInput) page.getElementById("loginPassword");
+        pwd.setValueAttribute("wjf018698255zxw");
+        DomElement button = page.getElementById("loginAction");
+        page =(HtmlPage) button.click();
+        Thread.sleep(1000);
+        
+        StringBuilder cookieBuilder = new StringBuilder();
+        for (Cookie cookie : webClient.getCookieManager().getCookies()) {
+        	cookieBuilder.append(cookie.getName());
+        	cookieBuilder.append("=");
+        	cookieBuilder.append(cookie.getValue());
+        	cookieBuilder.append("; ");
+		}
+        return cookieBuilder.substring(0, cookieBuilder.length() - 2);
+	}
+	
+	private void userJsoupExec(String url, String where_url){
+		try {
+			Connection conn = Jsoup.connect(url);     
+	    	conn.userAgent("Mozilla/5.0 (iPad; CPU OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A501 Safari/9537.53")  
+	    	.cookie("auth", this.getCookie()).post();
+	    	Document doc = conn.post();
+	    	Element el = doc.getElementsByClass("c").get(3);
+	    	String html = el.toString();
+	    	String area = "";
+	    	String birthday = "";
+	    	if(StringUtils.contains(html, "<br>地区:")){
+	    		area = StringUtils.substringBetween(html, "<br>地区:", "<br>").replace("\n", "");
+	    	}
+	    	if(StringUtils.contains(html, "<br>生日:")){
+	    		birthday = StringUtils.substringBetween(html, "<br>生日:", "<br>").replace("\n", "");
+	    	}
+	    	Elements els = el.getElementsByTag("a");
+	    	String tags = StringUtils.join(els.text()).replace("更多>>", "");
+	    	
+	    	GlobalComponent.sinaWeiboDBBean.update_data(User.class, area, tags, birthday, where_url);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

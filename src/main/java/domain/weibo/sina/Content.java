@@ -13,7 +13,7 @@ public class Content {
 	private String attitudes_count;	//赞数
 	private String comments_count;	//评论数
 	private String reposts_count;	//回复数
-	//还需要持久化html 内容
+	private String source;	//来源
 	
 	public String getTitle() {
 		return title;
@@ -57,6 +57,13 @@ public class Content {
 	public void setReposts_count(String reposts_count) {
 		this.reposts_count = reposts_count;
 	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	
 	public static void main(String[] args) {
 		GlobalComponent.dbBean.create_table(Content.class);
 	}

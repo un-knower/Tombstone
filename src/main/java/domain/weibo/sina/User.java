@@ -14,6 +14,9 @@ public class User {
 	private String gender; //性别
 	private String followers_count ; //粉丝数
 	private String follow_count  ; //关注数
+	private String birthday  ; //生日
+	private String area  ; //地域
+	private String tags  ; //标签
 	
 	public String getAuthor() {
 		return author;
@@ -63,6 +66,25 @@ public class User {
 	public void setFollow_count(String follow_count) {
 		this.follow_count = follow_count;
 	}
+	public String getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
+	public String getTags() {
+		return tags;
+	}
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+	
 	public static void main(String[] args) {
 		GlobalComponent.dbBean.create_table(User.class);
 	}
