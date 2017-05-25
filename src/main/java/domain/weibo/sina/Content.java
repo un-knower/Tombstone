@@ -63,8 +63,4 @@ public class Content {
 	public void setSource(String source) {
 		this.source = source;
 	}
-	
-	public static void main(String[] args) {
-		GlobalComponent.dbBean.create_table(Content.class);
-	}
 }

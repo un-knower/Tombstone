@@ -19,7 +19,8 @@ public class TouTiaoExec {
 		if(topic_id == null || topic_id.length() == 0){
 			return;
 		}
-		GlobalComponent.dbBean.create_table(Content.class, User.class, Reply.class);
-		Spider.create(new TouTiaoProcessor(count, topic_id)).addUrl(String.format(TOUTIAO_URL, topic_id)).thread(2).run();
+		String tableKey = "_20170525";
+		GlobalComponent.dbBean.create_table(tableKey, Content.class, User.class, Reply.class);
+		Spider.create(new TouTiaoProcessor(count, topic_id, tableKey)).addUrl(String.format(TOUTIAO_URL, topic_id)).thread(2).run();
 	}
 }

@@ -63,4 +63,8 @@ public class TimerUtils {
         calendar.set(Calendar.MINUTE, calendar.get(Calendar.MINUTE) - t);
         return new SimpleDateFormat("yyyy-MM-dd HH:mm").format(calendar.getTime());
 	}
+	
+	public static void main(String[] args) {
+
+	}
 }

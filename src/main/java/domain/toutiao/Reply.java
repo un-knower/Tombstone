@@ -43,10 +43,6 @@ public class Reply {
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
-	
-	public static void main(String[] args) {
-		GlobalComponent.dbBean.create_table(Reply.class);
-	}
 	public String getUpvote() {
 		return upvote;
 	}

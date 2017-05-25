@@ -9,6 +9,9 @@
 	selenium：用户渲染页面信息
 	htmlunit：模拟用户登录微博 发布博文等操作
 	Jsoup：sina微博 post请求包括cookie 得到个人信息
+	多线程：
+		启动spilder时 启动cookie获取线程 默认每2min执行登陆获取新的cookie
+		读写锁的使用，防止在更新cookie时 还在使用之前的cookie
 	
 数据分析
 	1)网民形象分析

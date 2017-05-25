@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.http.HttpHost;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -25,6 +26,7 @@ import domain.weibo.sina.Content;
 import domain.weibo.sina.User;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
+import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.selector.JsonPathSelector;
 import utils.TimerUtils;
 
@@ -36,12 +38,17 @@ import utils.TimerUtils;
  */
 public class SinaWeiboProcessor extends BasePageProcessor {
 
+	private String tableKey = "";
 	private String list_url_regex = "https://m.weibo.cn/api/container/getIndex?type=wb&queryVal=";
 	private String comments_url = "https://m.weibo.cn/api/comments/show?id=%s";
 	private String user_url = "https://m.weibo.cn/api/container/getIndex?type=uid&value=";
 	private String user_url_regex = "https://m.weibo.cn/api/container/getIndex?type=uid&value=";
 	private String comments_url_regex = "https://m.weibo.cn/api/comments/show?id=";
 	private String attitudes_url_regex = "https://m.weibo.cn/api/statuses/repostTimeline?id=";
+	
+	public SinaWeiboProcessor(String tableKey) {
+		this.tableKey = tableKey;
+	}
 	
 	@Override
 	public void process(Page page) {
@@ -91,7 +98,7 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 			String author_id = new JsonPathSelector("$.mblog.user.id").select(s);
 			String source = new JsonPathSelector("$.mblog.source").select(s);
 			
-			GlobalComponent.dbBean.insert_data(Content.class, title, author, url, createTime, attitudes_count, comments_count, reposts_count, source);
+			GlobalComponent.dbBean.insert_data(tableKey, Content.class, title, author, url, createTime, attitudes_count, comments_count, reposts_count, source);
 			
 			page.addTargetRequest(user_url + author_id);
 			//推送评论url
@@ -117,7 +124,7 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 		String area = "";
 		String tags = "";
 		
-		GlobalComponent.dbBean.insert_data(User.class, screen_name, profile_url, 
+		GlobalComponent.dbBean.insert_data(tableKey, User.class, screen_name, profile_url, 
 				statuses_count, verified, description, gender, followers_count, follow_count, 
 				birthday, area, tags);
 		
@@ -163,39 +170,11 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 		}
 	}
 	
-	/**
-	 * 模拟登陆sina微博获取cookie
-	 */
-	private String getCookie() throws InterruptedException, FailingHttpStatusCodeException, MalformedURLException, IOException{
-        WebClient webClient = new WebClient(BrowserVersion.CHROME);
-        webClient.addRequestHeader("User-Agent", "Mozilla/5.0 (iPad; CPU OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A501 Safari/9537.53");
-        webClient.getCookieManager().setCookiesEnabled(true);
-        
-        HtmlPage page = webClient.getPage("https://passport.weibo.cn/signin/login");
-        Thread.sleep(1000);
-        HtmlInput usr = (HtmlInput) page.getElementById("loginName");
-        usr.setValueAttribute("zxw0066@sina.cn");
-        HtmlInput pwd = (HtmlInput) page.getElementById("loginPassword");
-        pwd.setValueAttribute("wjf018698255zxw");
-        DomElement button = page.getElementById("loginAction");
-        page =(HtmlPage) button.click();
-        Thread.sleep(1000);
-        
-        StringBuilder cookieBuilder = new StringBuilder();
-        for (Cookie cookie : webClient.getCookieManager().getCookies()) {
-        	cookieBuilder.append(cookie.getName());
-        	cookieBuilder.append("=");
-        	cookieBuilder.append(cookie.getValue());
-        	cookieBuilder.append("; ");
-		}
-        return cookieBuilder.substring(0, cookieBuilder.length() - 2);
-	}
-	
 	private void userJsoupExec(String url, String where_url){
 		try {
 			Connection conn = Jsoup.connect(url);     
 	    	conn.userAgent("Mozilla/5.0 (iPad; CPU OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A501 Safari/9537.53")  
-	    	.cookie("auth", this.getCookie()).post();
+	    	.cookie("auth", SinaWeiboLogin.SINAWEIBO_COOKIE).post();
 	    	Document doc = conn.post();
 	    	Element el = doc.getElementsByClass("c").get(3);
 	    	String html = el.toString();
@@ -210,7 +189,7 @@ public class SinaWeiboProcessor extends BasePageProcessor {
 	    	Elements els = el.getElementsByTag("a");
 	    	String tags = StringUtils.join(els.text()).replace("更多>>", "");
 	    	
-	    	GlobalComponent.sinaWeiboDBBean.update_data(User.class, area, tags, birthday, where_url);
+	    	GlobalComponent.sinaWeiboDBBean.update_data(tableKey, User.class, area, tags, birthday, where_url);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

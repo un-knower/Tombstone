@@ -25,15 +25,15 @@ public class DBBean {
 		DbUtils.closeQuietly(conn);
 	}
 
-	public String getTableName(Class<?> t) {
-		return t.getAnnotation(DBTable.class).name();
+	public String getTableName(String tableKey, Class<?> t) {
+		return t.getAnnotation(DBTable.class).name() + tableKey;
 	}
 
-	public void create_table(Class<?>... ts) {
+	public void create_table(String tableKey, Class<?>... ts) {
 		try {
 			for (Class<?> t : ts) {
 				// drop table <start>
-				String tableName = getTableName(t);
+				String tableName = getTableName(tableKey, t);
 				StringBuilder sql = new StringBuilder();
 
 				sql.append("DROP TABLE IF EXISTS `" + tableName + "`");
@@ -62,9 +62,9 @@ public class DBBean {
 		}
 	}
 
-	public void insert_data(Class<?> t, Object... params) {
+	public void insert_data(String tableKey, Class<?> t, Object... params) {
 		
-		String tableName = getTableName(t);
+		String tableName = getTableName(tableKey, t);
 		try {
 			Field[] fields = t.getDeclaredFields();
 			StringBuilder sql = new StringBuilder();

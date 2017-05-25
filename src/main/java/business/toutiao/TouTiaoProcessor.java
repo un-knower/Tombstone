@@ -41,12 +41,14 @@ public class TouTiaoProcessor extends BasePageProcessor {
 	private String common_regex = "http://www.toutiao.com/api/comment/list/?group_id=";
 	private String user_url_regex = "http://www.toutiao.com/c/user/\\d+/";
 	
+	private String tableKey;
 	private String keyword;
 	private int count;
 	
-	public TouTiaoProcessor(int count, String keyword) {
+	public TouTiaoProcessor(int count, String keyword, String tableKey) {
 		this.count = count;
 		this.keyword = keyword;
+		this.tableKey = tableKey;
 	}
 	
 	@Override
@@ -132,7 +134,7 @@ public class TouTiaoProcessor extends BasePageProcessor {
 		String chinese_tag = page.getRequest().getExtra("chinese_tag").toString();
 		
 		author = StringUtils.deleteWhitespace(author);
-		GlobalComponent.dbBean.insert_data(Content.class, title, author, url, createTime, comments_count, chinese_tag);
+		GlobalComponent.dbBean.insert_data(this.tableKey, Content.class, title, author, url, createTime, comments_count, chinese_tag);
 
 		String item_id = StringUtils.substringBetween(page.getRawText(), "item_id: '", "',");
 		String group_id = StringUtils.substringBetween(page.getRawText(), "group_id: '", "',");
@@ -154,9 +156,9 @@ public class TouTiaoProcessor extends BasePageProcessor {
 		Document doc = Jsoup.parse(html);
 		Elements els = doc.getElementsByAttributeValue("riot-tag", "number");
 		if(els == null || els.size() == 0){
-			GlobalComponent.dbBean.insert_data(User.class, author_name, author_url, 0, 0);
+			GlobalComponent.dbBean.insert_data(this.tableKey, User.class, author_name, author_url, 0, 0);
 		}else{
-			GlobalComponent.dbBean.insert_data(User.class, author_name, author_url, els.get(0).getElementsByAttribute("number").attr("number"), els.get(1).getElementsByAttribute("number").attr("number"));
+			GlobalComponent.dbBean.insert_data(this.tableKey, User.class, author_name, author_url, els.get(0).getElementsByAttribute("number").attr("number"), els.get(1).getElementsByAttribute("number").attr("number"));
 		}
 	}
 	
@@ -193,7 +195,7 @@ public class TouTiaoProcessor extends BasePageProcessor {
 			String authorurl = "http://www.toutiao.com/c/user/" + userid + "/";
 			String createTime = new JsonPathSelector("$.create_time").select(comment);
 			String upvote = new JsonPathSelector("$.digg_count").select(comment);
-			GlobalComponent.dbBean.insert_data(Reply.class, title, content, author, authorurl, createTime, upvote);
+			GlobalComponent.dbBean.insert_data(this.tableKey, Reply.class, title, content, author, authorurl, createTime, upvote);
 			
 			page.addTargetRequest(authorurl);
 		}

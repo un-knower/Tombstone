@@ -1,8 +1,9 @@
 package business.autohome;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -12,6 +13,7 @@ import domain.autohome.Content;
 import domain.autohome.Reply;
 import domain.autohome.User;
 import us.codecraft.webmagic.Page;
+import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.selector.Selectable;
 
@@ -23,6 +25,8 @@ import us.codecraft.webmagic.selector.Selectable;
  */
 public class AutohomeProcessor extends BasePageProcessor {
 
+	private String tableKey = "";
+	
 	private String url_list = "http://club.autohome.com.cn/bbs/forum-c-\\d+\\-\\d+\\.html"; // 列表 url
 	private String url_post = "http://club.autohome.com.cn/bbs/thread-c-\\d+\\-\\d+\\-\\d+\\.html"; // 内容 url
 	private String url_user = "http://i.autohome.com.cn/\\d+\\/home.html"; // 用户 url
@@ -32,7 +36,11 @@ public class AutohomeProcessor extends BasePageProcessor {
 
 	@Override
 	public Site getSite() {
-		return super.getSite().setCharset("gbk");
+		return super.getSite().setCharset("gbk").setSleepTime(3000);
+	}
+	
+	public AutohomeProcessor(String tableKey) {
+		this.tableKey = tableKey;
 	}
 
 	public void process(Page page) {
@@ -44,6 +52,8 @@ public class AutohomeProcessor extends BasePageProcessor {
 			this.pushUser(page);
 		} else if (page.getUrl().regex(url_user_info).match()) {
 			this.userExec(page);
+		} else{
+			System.out.println(">>>>>>>>>>>>>>>>>no match!<<<<<<<<<<<<<<<");
 		}
 	}
 
@@ -55,14 +65,23 @@ public class AutohomeProcessor extends BasePageProcessor {
 	private void pushList(Page page) {
 		// 获取所有a标签下class为a_topic的所有link 集合 并和内容url 匹配
 		List<String> l_post = page.getHtml().xpath("//*[@id='subcontent']").links().regex(url_post).all();
-		String url_regex = StringUtils.substringBefore(page.getUrl().toString(), "-1.html");
-		url_regex += "-\\d+\\.html";
-		List<String> l_url = page.getHtml().links().regex(url_regex).all(); // 所有的列表
-		HashSet<String> l_urls = new HashSet<String>();
+		String url_new = StringUtils.substringBefore(page.getUrl().toString(), "-1.html");
+		
+		String maxPage = page.getHtml().xpath("//*[@id=\"subcontent\"]/div[1]/div[2]/span[2]/span/text()").toString();
+		if(maxPage != null && maxPage.length() != 0){
+			maxPage = StringUtils.deleteWhitespace(maxPage).replace("/", "").replace("页", "");
+		}
+		int numPage = 0;
+		int maxPageInt = Integer.parseInt(maxPage);
+		if(maxPageInt % 100 == 0){
+			numPage = maxPageInt / 100;
+		}else{
+			numPage = maxPageInt % 100 + 1;
+		}
 		List<String> l_url_final = new ArrayList<String>();
-		for (String s : l_url) {
-			if(l_urls.add(s)){
-				l_url_final.add(s);
+		if(numPage > 1){
+			for (int i = 2; i <=numPage; i++) {
+				l_url_final.add(url_new + "-" + i + ".html");
 			}
 		}
 		page.addTargetRequests(l_post);
@@ -83,7 +102,7 @@ public class AutohomeProcessor extends BasePageProcessor {
 			return;
 		}
 		// 插入内容表
-		GlobalComponent.dbBean.insert_data(Content.class, title, author, page.getUrl().toString(), createTime);
+		GlobalComponent.dbBean.insert_data(this.tableKey, Content.class, title, author, page.getUrl().toString(), createTime);
 
 		if (StringUtils.contains(page.getUrl().toString(), "-1.html")) {
 			String pageCount = StringUtils
@@ -116,8 +135,7 @@ public class AutohomeProcessor extends BasePageProcessor {
 			String reply_createTime = selectable.xpath("//*[@class='plr26 rtopconnext']/span[@xname='date']/text()")
 					.toString().trim();
 			// 插入回复表
-			GlobalComponent.dbBean.insert_data(Reply.class, title, reply_content, reply_author, reply_authorurl,
-					reply_createTime);
+			GlobalComponent.dbBean.insert_data(this.tableKey, Reply.class, title, reply_content, reply_author, reply_authorurl, reply_createTime);
 		}
 	}
 
@@ -132,7 +150,17 @@ public class AutohomeProcessor extends BasePageProcessor {
 		if (!StringUtils.isNumeric(author_id)) {
 			return;
 		}
-		page.addTargetRequest(String.format(url_user_other_format, author_id));
+		
+		String area = page.getHtml().xpath("//*[@id=\"subContainer\"]/div[2]/div[1]/div[1]/a[4]/text()").toString();
+		String sex = page.getHtml().xpath("//*[@id=\"subContainer\"]/div[2]/div[1]/h1/span/@class").toString();
+		String url = String.format(url_user_other_format, author_id);
+		Request request = new Request();
+		request.setUrl(url);
+		Map<String, Object> extras = new HashMap<String, Object>();
+		extras.put("area", area);
+		extras.put("sex", sex);
+		request.setExtras(extras);
+		page.addTargetRequest(request);
 	}
 
 	/**
@@ -148,8 +176,16 @@ public class AutohomeProcessor extends BasePageProcessor {
 		TopicCount = TopicCount.replace("篇帖子", "");
 		String auth_id = page.getHtml().xpath("/html/body/ul/li[1]/a").links().toString()
 				.replace("http://i.autohome.com.cn/", "").replace("/club/topic", "");
+		
+		String area = page.getRequest().getExtra("area").toString();
+		String sex = page.getRequest().getExtra("sex").toString();
+		String createtime = page.getHtml().xpath("/html/body/div[1]/div/ul[2]/li[1]/span/text()").toString();
+		String last = page.getHtml().xpath("/html/body/div[1]/div/ul[2]/li[2]/span/text()").toString();
+		
 		// 插入用户表
-		GlobalComponent.dbBean.insert_data(User.class, author, String.format(url_user_format, auth_id), TopicCount,
-				JHTopicCount);
+		GlobalComponent.dbBean.insert_data(this.tableKey, User.class, author, sex, String.format(url_user_format, auth_id), TopicCount,
+				JHTopicCount, area, createtime, last);
 	}
+	
+	
 }

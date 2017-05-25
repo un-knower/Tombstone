@@ -7,15 +7,25 @@ import conf.db.mysql.DBTable;
 public class User {
 
 	private String author; //作者昵称
+	private String sex; //性别
 	private String url; //主页url
 	private String topic; //帖子
 	private String essential; //精华帖
+	private String area  ; //地域
+	private String createtime  ; //注册时间
+	private String lasttime  ; //最后登录时间
 	
 	public String getAuthor() {
 		return author;
 	}
 	public void setAuthor(String author) {
 		this.author = author;
+	}
+	public String getSex() {
+		return sex;
+	}
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 	public String getUrl() {
 		return url;
@@ -35,8 +45,22 @@ public class User {
 	public void setEssential(String essential) {
 		this.essential = essential;
 	}
-	
-	public static void main(String[] args) {
-		GlobalComponent.dbBean.create_table(User.class);
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
+	public String getCreatetime() {
+		return createtime;
+	}
+	public void setCreatetime(String createtime) {
+		this.createtime = createtime;
+	}
+	public String getLasttime() {
+		return lasttime;
+	}
+	public void setLasttime(String lasttime) {
+		this.lasttime = lasttime;
 	}
 }

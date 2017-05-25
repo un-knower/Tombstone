@@ -51,7 +51,4 @@ public class Content {
 	public void setTags(String tags) {
 		this.tags = tags;
 	}
-	public static void main(String[] args) {
-		GlobalComponent.dbBean.create_table(Content.class);
-	}
 }

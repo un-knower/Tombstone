@@ -35,8 +35,4 @@ public class Content {
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
-	
-	public static void main(String[] args) {
-		GlobalComponent.dbBean.create_table(Content.class);
-	}
 }

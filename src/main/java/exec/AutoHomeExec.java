@@ -14,7 +14,8 @@ public class AutoHomeExec {
 		if(topic_id == 0){
 			return;
 		}
-		GlobalComponent.dbBean.create_table(Content.class, User.class, Reply.class);
-		Spider.create(new AutohomeProcessor()).addUrl(String.format("http://club.autohome.com.cn/bbs/forum-c-%s-1.html", topic_id)).thread(2).run();
+		String tableKey = "_20170525";
+		GlobalComponent.dbBean.create_table(tableKey, Content.class, User.class, Reply.class);
+		Spider.create(new AutohomeProcessor(tableKey)).addUrl(String.format("http://club.autohome.com.cn/bbs/forum-c-%s-1.html", topic_id)).thread(2).run();
 	}
 }

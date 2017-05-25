@@ -35,7 +35,4 @@ public class User {
 	public void setFources(String fources) {
 		this.fources = fources;
 	}
-	public static void main(String[] args) {
-		GlobalComponent.dbBean.create_table(User.class);
-	}
 }
