@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import conf.db.ServerConfig;
+import conf.ServerConfig;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

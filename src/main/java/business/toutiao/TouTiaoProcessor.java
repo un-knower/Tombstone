@@ -11,7 +11,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import business.BasePageProcessor;
-import conf.db.GlobalComponent;
+import conf.GlobalComponent;
 import domain.toutiao.Content;
 import domain.toutiao.Reply;
 import domain.toutiao.User;

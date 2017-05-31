@@ -1,6 +1,5 @@
 package domain.toutiao;
 
-import conf.db.GlobalComponent;
 import conf.db.mysql.DBTable;
 
 @DBTable(name = "data_toutiao_content")

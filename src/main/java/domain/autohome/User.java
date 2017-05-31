@@ -1,6 +1,5 @@
 package domain.autohome;
 
-import conf.db.GlobalComponent;
 import conf.db.mysql.DBTable;
 
 @DBTable(name = "data_autohome_user")

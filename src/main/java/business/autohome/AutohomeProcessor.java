@@ -8,7 +8,7 @@ import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
 
 import business.BasePageProcessor;
-import conf.db.GlobalComponent;
+import conf.GlobalComponent;
 import domain.autohome.Content;
 import domain.autohome.Reply;
 import domain.autohome.User;
@@ -26,6 +26,7 @@ import us.codecraft.webmagic.selector.Selectable;
 public class AutohomeProcessor extends BasePageProcessor {
 
 	private String tableKey = "";
+	private int isvip = 0;
 	
 	private String url_list = "http://club.autohome.com.cn/bbs/forum-c-\\d+\\-\\d+\\.html"; // 列表 url
 	private String url_post = "http://club.autohome.com.cn/bbs/thread-c-\\d+\\-\\d+\\-\\d+\\.html"; // 内容 url
@@ -36,11 +37,12 @@ public class AutohomeProcessor extends BasePageProcessor {
 
 	@Override
 	public Site getSite() {
-		return super.getSite().setCharset("gbk").setSleepTime(3000);
+		return super.getSite().setCharset("gbk").setSleepTime(5000).setRetryTimes(3);
 	}
 	
-	public AutohomeProcessor(String tableKey) {
+	public AutohomeProcessor(String tableKey, int isvip) {
 		this.tableKey = tableKey;
+		this.isvip = isvip;
 	}
 
 	public void process(Page page) {
@@ -65,27 +67,36 @@ public class AutohomeProcessor extends BasePageProcessor {
 	private void pushList(Page page) {
 		// 获取所有a标签下class为a_topic的所有link 集合 并和内容url 匹配
 		List<String> l_post = page.getHtml().xpath("//*[@id='subcontent']").links().regex(url_post).all();
-		String url_new = StringUtils.substringBefore(page.getUrl().toString(), "-1.html");
-		
-		String maxPage = page.getHtml().xpath("//*[@id=\"subcontent\"]/div[1]/div[2]/span[2]/span/text()").toString();
-		if(maxPage != null && maxPage.length() != 0){
-			maxPage = StringUtils.deleteWhitespace(maxPage).replace("/", "").replace("页", "");
-		}
-		int numPage = 0;
-		int maxPageInt = Integer.parseInt(maxPage);
-		if(maxPageInt % 100 == 0){
-			numPage = maxPageInt / 100;
-		}else{
-			numPage = maxPageInt % 100 + 1;
-		}
-		List<String> l_url_final = new ArrayList<String>();
-		if(numPage > 1){
-			for (int i = 2; i <=numPage; i++) {
-				l_url_final.add(url_new + "-" + i + ".html");
-			}
-		}
 		page.addTargetRequests(l_post);
-		page.addTargetRequests(l_url_final);
+		
+		try {
+			String url_new = StringUtils.substringBefore(page.getUrl().toString(), "-1.html");
+			String maxPage = page.getHtml().xpath("//*[@id=\"subcontent\"]/div[1]/div[2]/span[2]/span/text()").toString();
+			if(maxPage != null && maxPage.length() != 0){
+				maxPage = StringUtils.deleteWhitespace(maxPage).replace("/", "").replace("页", "");
+			}
+			int numPage = 0;
+			if(isvip == 0){
+				numPage = 3;
+			}else{
+				int maxPageInt = Integer.parseInt(maxPage);
+				if(maxPageInt % 100 == 0){
+					numPage = maxPageInt / 100;
+				}else{
+					numPage = maxPageInt % 100 + 1;
+				}
+			}
+			
+			List<String> l_url_final = new ArrayList<String>();
+			if(numPage > 1){
+				for (int i = 2; i <=numPage; i++) {
+					l_url_final.add(url_new + "-" + i + ".html");
+				}
+			}
+			page.addTargetRequests(l_url_final);
+		} catch (Exception e) {
+			return;
+		}
 	}
 
 	/**
@@ -103,7 +114,7 @@ public class AutohomeProcessor extends BasePageProcessor {
 		}
 		// 插入内容表
 		GlobalComponent.dbBean.insert_data(this.tableKey, Content.class, title, author, page.getUrl().toString(), createTime);
-
+		
 		if (StringUtils.contains(page.getUrl().toString(), "-1.html")) {
 			String pageCount = StringUtils
 					.deleteWhitespace(page.getHtml().css("#x-pages1 > span.gopage > span", "text").toString())

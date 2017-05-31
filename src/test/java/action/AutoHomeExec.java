@@ -1,7 +1,7 @@
-package exec;
+package action;
 
 import business.autohome.AutohomeProcessor;
-import conf.db.GlobalComponent;
+import conf.GlobalComponent;
 import domain.autohome.Content;
 import domain.autohome.Reply;
 import domain.autohome.User;
@@ -14,8 +14,11 @@ public class AutoHomeExec {
 		if(topic_id == 0){
 			return;
 		}
-		String tableKey = "_20170525";
+		String tableKey = "";
+		int isvip = 0;
 		GlobalComponent.dbBean.create_table(tableKey, Content.class, User.class, Reply.class);
-		Spider.create(new AutohomeProcessor(tableKey)).addUrl(String.format("http://club.autohome.com.cn/bbs/forum-c-%s-1.html", topic_id)).thread(2).run();
+		Spider.create(new AutohomeProcessor(tableKey, isvip))
+		.addUrl(String.format("http://club.autohome.com.cn/bbs/forum-c-%s-1.html", topic_id))
+		.thread(2).run();
 	}
 }

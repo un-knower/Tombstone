@@ -2,7 +2,7 @@ package conf.db.mysql;
 
 import java.sql.SQLException;
 
-import conf.db.ServerConfig;
+import conf.ServerConfig;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

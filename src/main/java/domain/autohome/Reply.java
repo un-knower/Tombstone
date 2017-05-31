@@ -1,6 +1,5 @@
 package domain.autohome;
 
-import conf.db.GlobalComponent;
 import conf.db.mysql.DBTable;
 
 @DBTable(name = "data_autohome_reply")
@@ -11,6 +10,15 @@ public class Reply {
 	private String author; //回复人昵称
 	private String authorurl; //回复人主页url
 	private String createTime; //回复人时间
+	
+	public Reply(String title, String content, String author, String authorurl, String createTime) {
+		super();
+		this.title = title;
+		this.content = content;
+		this.author = author;
+		this.authorurl = authorurl;
+		this.createTime = createTime;
+	}
 	
 	public String getTitle() {
 		return title;

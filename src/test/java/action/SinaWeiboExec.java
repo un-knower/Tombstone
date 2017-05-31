@@ -1,4 +1,4 @@
-package exec;
+package action;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import business.weibo.sina.SinaWeiboLogin;
 import business.weibo.sina.SinaWeiboProcessor;
-import conf.db.GlobalComponent;
+import conf.GlobalComponent;
 import domain.weibo.sina.Content;
 import domain.weibo.sina.User;
 import us.codecraft.webmagic.Spider;

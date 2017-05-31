@@ -21,7 +21,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.util.Cookie;
 
 import business.BasePageProcessor;
-import conf.db.GlobalComponent;
+import conf.GlobalComponent;
 import domain.weibo.sina.Content;
 import domain.weibo.sina.User;
 import us.codecraft.webmagic.Page;

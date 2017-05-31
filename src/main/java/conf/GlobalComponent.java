@@ -1,5 +1,6 @@
-package conf.db;
+package conf;
 
+import conf.db.redis.RedisAPI;
 import dao.DBBean;
 import dao.SinaWeiboDBBean;
 
@@ -12,4 +13,5 @@ public class GlobalComponent {
 
 	public static DBBean dbBean  = new DBBean();
 	public static SinaWeiboDBBean sinaWeiboDBBean  = new SinaWeiboDBBean();
+	public static RedisAPI redisAPI  = new RedisAPI();
 }

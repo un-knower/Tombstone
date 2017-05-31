@@ -1,4 +1,4 @@
-package conf.db;
+package conf;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;

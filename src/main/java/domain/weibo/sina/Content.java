@@ -1,6 +1,5 @@
 package domain.weibo.sina;
 
-import conf.db.GlobalComponent;
 import conf.db.mysql.DBTable;
 
 @DBTable(name = "data_sinaweibo_content")
