@@ -1,6 +1,7 @@
 该项目基于 webmagic + selenium 实现网络爬虫功能
 	获取论坛、微博等 社交平台 内容、评论、用户等基本信息
 	最后对数据进行分析 汇总 得出相关结论
+	isvip = 0 默认 文章列表3页 内容评论2页
 	
 技术点
 	webmagic：基础实现
@@ -10,8 +11,7 @@
 	htmlunit：模拟用户登录微博 发布博文等操作
 	Jsoup：sina微博 post请求包括cookie 得到个人信息
 	多线程：
-		启动spilder时 启动cookie获取线程 默认每2min执行登陆获取新的cookie
-		读写锁的使用，防止在更新cookie时 还在使用之前的cookie
+		设置X分钟执行一次 监控redis中是否包含任务 获取后进行json解析 进行数据爬取
 	
 数据分析
 	1)网民形象分析

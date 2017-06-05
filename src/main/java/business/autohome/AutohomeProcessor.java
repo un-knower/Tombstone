@@ -121,7 +121,11 @@ public class AutohomeProcessor extends BasePageProcessor {
 					.replace("页", "").replace("/", "");
 			int maxCount = 0;
 			if (pageCount != null && pageCount.length() != 0) {
-				maxCount = Integer.parseInt(pageCount);
+				if(isvip == 0){
+					maxCount = 2;
+				}else{
+					maxCount = Integer.parseInt(pageCount);
+				}
 				List<String> urls = new ArrayList<String>();
 				String page_url = page.getUrl().toString();
 				page_url = page_url.replace("-1.html", "-%s.html");
